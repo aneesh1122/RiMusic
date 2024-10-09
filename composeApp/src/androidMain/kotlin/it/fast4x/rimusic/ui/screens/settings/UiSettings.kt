@@ -290,8 +290,8 @@ fun DefaultUiSettings() {
     applyFontPadding = false
     var isSwipeToActionEnabled by rememberPreference(isSwipeToActionEnabledKey, true)
     isSwipeToActionEnabled = true
-    var disableClosingPlayerSwipingDown by rememberPreference(disableClosingPlayerSwipingDownKey, true)
-    disableClosingPlayerSwipingDown = true
+    var disableClosingPlayerSwipingDown by rememberPreference(disableClosingPlayerSwipingDownKey, false)
+    disableClosingPlayerSwipingDown = false
     var showSearchTab by rememberPreference(showSearchTabKey, false)
     showSearchTab = false
     var showStatsInNavbar by rememberPreference(showStatsInNavbarKey, false)
@@ -479,8 +479,8 @@ fun DefaultUiSettings() {
     disableScrollingText = false
     var effectRotationEnabled by rememberPreference(effectRotationKey, true)
     effectRotationEnabled = true
-    var thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, false)
-    thumbnailTapEnabled = false
+    var thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, true)
+    thumbnailTapEnabled = true
     var clickLyricsText by rememberPreference(clickLyricsTextKey, true)
     clickLyricsText = true
     var backgroundProgress by rememberPreference(
@@ -585,7 +585,7 @@ fun UiSettings(
     var useSystemFont by rememberPreference(useSystemFontKey, false)
     var applyFontPadding by rememberPreference(applyFontPaddingKey, false)
     var isSwipeToActionEnabled by rememberPreference(isSwipeToActionEnabledKey, true)
-    var disableClosingPlayerSwipingDown by rememberPreference(disableClosingPlayerSwipingDownKey, true)
+    var disableClosingPlayerSwipingDown by rememberPreference(disableClosingPlayerSwipingDownKey, false)
     var showSearchTab by rememberPreference(showSearchTabKey, false)
     var showStatsInNavbar by rememberPreference(showStatsInNavbarKey, false)
 
@@ -719,7 +719,7 @@ fun UiSettings(
     var showRemainingSongTime by rememberPreference(showRemainingSongTimeKey, true)
     var disableScrollingText by rememberPreference(disableScrollingTextKey, false)
     var effectRotationEnabled by rememberPreference(effectRotationKey, true)
-    var thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, false)
+    var thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, true)
     var clickLyricsText by rememberPreference(clickLyricsTextKey, true)
     var backgroundProgress by rememberPreference(
         backgroundProgressKey,

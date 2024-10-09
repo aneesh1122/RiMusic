@@ -269,6 +269,7 @@ const val titleExpandedKey = "titleExpanded"
 const val timelineExpandedKey = "timelineExpanded"
 const val controlsExpandedKey = "controlsExpanded"
 const val miniQueueExpandedKey = "miniQueueExpanded"
+const val statsForNerdsExpandedKey = "statsForNerdsExpanded"
 
 inline fun <reified T : Enum<T>> SharedPreferences.getEnum(
     key: String,

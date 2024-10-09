@@ -244,6 +244,7 @@ import it.fast4x.rimusic.utils.showButtonPlayerVideoKey
 import it.fast4x.rimusic.utils.showalbumcoverKey
 import it.fast4x.rimusic.utils.showsongsKey
 import it.fast4x.rimusic.utils.showvisthumbnailKey
+import it.fast4x.rimusic.utils.statsForNerdsExpandedKey
 import it.fast4x.rimusic.utils.statsfornerdsKey
 import it.fast4x.rimusic.utils.swipeUpQueueKey
 import it.fast4x.rimusic.utils.tapqueueKey
@@ -364,6 +365,7 @@ fun PlayerModern(
 
     var queueDurationExpanded by rememberPreference(queueDurationExpandedKey, true)
     var miniQueueExpanded by rememberPreference(miniQueueExpandedKey, true)
+    var statsForNerdsExpanded by rememberPreference(statsForNerdsExpandedKey, true)
 
 
     binder.player.DisposableListener {
@@ -813,7 +815,7 @@ fun PlayerModern(
         mutableStateOf(false)
     }
 
-    val thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, false)
+    val thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, true)
     val showNextSongsInPlayer by rememberPreference(showNextSongsInPlayerKey, false)
 
     var showQueue by rememberSaveable { mutableStateOf(false) }
@@ -2602,11 +2604,13 @@ fun PlayerModern(
                 }
 
                 if (!showthumbnail || playerType == PlayerType.Modern) {
-                    StatsForNerds(
-                        mediaId = mediaItem.mediaId,
-                        isDisplayed = statsfornerds,
-                        onDismiss = {}
-                    )
+                    if (!expandedplayer || !isShowingLyrics || statsForNerdsExpanded) {
+                        StatsForNerds(
+                            mediaId = mediaItem.mediaId,
+                            isDisplayed = statsfornerds,
+                            onDismiss = {}
+                        )
+                    }
                 }
                 actionsBarContent()
               }

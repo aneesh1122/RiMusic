@@ -136,6 +136,7 @@ import it.fast4x.rimusic.utils.showlyricsthumbnailKey
 import it.fast4x.rimusic.utils.showsongsKey
 import it.fast4x.rimusic.utils.showthumbnailKey
 import it.fast4x.rimusic.utils.showvisthumbnailKey
+import it.fast4x.rimusic.utils.statsForNerdsExpandedKey
 import it.fast4x.rimusic.utils.statsfornerdsKey
 import it.fast4x.rimusic.utils.swipeUpQueueKey
 import it.fast4x.rimusic.utils.tapqueueKey
@@ -212,7 +213,7 @@ fun DefaultAppearanceSettings() {
     var effectRotationEnabled by rememberPreference(effectRotationKey, true)
     effectRotationEnabled = true
     var thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, false)
-    thumbnailTapEnabled = false
+    thumbnailTapEnabled = true
     var showButtonPlayerAddToPlaylist by rememberPreference(showButtonPlayerAddToPlaylistKey, true)
     showButtonPlayerAddToPlaylist = true
     var showButtonPlayerArrow by rememberPreference(showButtonPlayerArrowKey, false)
@@ -398,7 +399,7 @@ fun AppearanceSettings(
 
     var effectRotationEnabled by rememberPreference(effectRotationKey, true)
 
-    var thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, false)
+    var thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, true)
 
 
     var showButtonPlayerAddToPlaylist by rememberPreference(showButtonPlayerAddToPlaylistKey, true)
@@ -492,6 +493,7 @@ fun AppearanceSettings(
     var timelineExpanded by rememberPreference(timelineExpandedKey, true)
     var controlsExpanded by rememberPreference(controlsExpandedKey, true)
     var miniQueueExpanded by rememberPreference(miniQueueExpandedKey, true)
+    var statsForNerdsExpanded by rememberPreference(statsForNerdsExpandedKey, true)
 
     Column(
         modifier = Modifier
@@ -1650,6 +1652,20 @@ fun AppearanceSettings(
                     isChecked = controlsExpanded,
                     onCheckedChange = { controlsExpanded = it }
                 )
+
+            if (!(showthumbnail && playerType == PlayerType.Essential) && statsfornerds){
+                if (filter.isNullOrBlank() || stringResource(R.string.statsfornerdsplayer).contains(
+                        filterCharSequence,
+                        true
+                    )
+                )
+                    SwitchSettingEntry(
+                        title = stringResource(R.string.statsfornerdsplayer),
+                        text = "",
+                        isChecked = statsForNerdsExpanded,
+                        onCheckedChange = { statsForNerdsExpanded = it }
+                    )
+            }
 
             if (showNextSongsInPlayer) {
                 if (filter.isNullOrBlank() || stringResource(R.string.miniqueue).contains(
