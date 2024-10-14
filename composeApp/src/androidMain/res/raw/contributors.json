@@ -4,7 +4,7 @@
     "id": 1484476,
     "avatar_url": "https://avatars.githubusercontent.com/u/1484476?v=4",
     "html_url": "https://github.com/fast4x",
-    "contributions": 7250
+    "contributions": 7473
   },
   {
     "login": "aneesh1122",
@@ -12,6 +12,13 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/45353488?v=4",
     "html_url": "https://github.com/aneesh1122",
     "contributions": 160
+  },
+  {
+    "login": "knighthat",
+    "id": 68310158,
+    "avatar_url": "https://avatars.githubusercontent.com/u/68310158?v=4",
+    "html_url": "https://github.com/knighthat",
+    "contributions": 86
   },
   {
     "login": "martkol",
@@ -35,13 +42,6 @@
     "contributions": 33
   },
   {
-    "login": "knighthat",
-    "id": 68310158,
-    "avatar_url": "https://avatars.githubusercontent.com/u/68310158?v=4",
-    "html_url": "https://github.com/knighthat",
-    "contributions": 25
-  },
-  {
     "login": "twistios",
     "id": 54811436,
     "avatar_url": "https://avatars.githubusercontent.com/u/54811436?v=4",
@@ -54,6 +54,13 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/68847306?v=4",
     "html_url": "https://github.com/DanielSevillano",
     "contributions": 13
+  },
+  {
+    "login": "KyNarec",
+    "id": 113847208,
+    "avatar_url": "https://avatars.githubusercontent.com/u/113847208?v=4",
+    "html_url": "https://github.com/KyNarec",
+    "contributions": 2
   },
   {
     "login": "bbyeen",
@@ -70,24 +77,24 @@
     "contributions": 2
   },
   {
-    "login": "iscle",
-    "id": 8018823,
-    "avatar_url": "https://avatars.githubusercontent.com/u/8018823?v=4",
-    "html_url": "https://github.com/iscle",
+    "login": "Craeckie",
+    "id": 5006444,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5006444?v=4",
+    "html_url": "https://github.com/Craeckie",
     "contributions": 1
   },
   {
-    "login": "ov1d1u",
-    "id": 1385202,
-    "avatar_url": "https://avatars.githubusercontent.com/u/1385202?v=4",
-    "html_url": "https://github.com/ov1d1u",
+    "login": "lrusso96",
+    "id": 26090639,
+    "avatar_url": "https://avatars.githubusercontent.com/u/26090639?v=4",
+    "html_url": "https://github.com/lrusso96",
     "contributions": 1
   },
   {
-    "login": "roklc",
-    "id": 142526268,
-    "avatar_url": "https://avatars.githubusercontent.com/u/142526268?v=4",
-    "html_url": "https://github.com/roklc",
+    "login": "locxter",
+    "id": 54595101,
+    "avatar_url": "https://avatars.githubusercontent.com/u/54595101?v=4",
+    "html_url": "https://github.com/locxter",
     "contributions": 1
   },
   {
@@ -97,10 +104,10 @@
     "html_url": "https://github.com/821938089"
   },
   {
-    "login": "Craeckie",
-    "id": 5006444,
-    "avatar_url": "https://avatars.githubusercontent.com/u/5006444?v=4",
-    "html_url": "https://github.com/Craeckie"
+    "login": "iscle",
+    "id": 8018823,
+    "avatar_url": "https://avatars.githubusercontent.com/u/8018823?v=4",
+    "html_url": "https://github.com/iscle"
   },
   {
     "login": "jaimtres",
@@ -109,16 +116,16 @@
     "html_url": "https://github.com/jaimtres"
   },
   {
-    "login": "locxter",
-    "id": 54595101,
-    "avatar_url": "https://avatars.githubusercontent.com/u/54595101?v=4",
-    "html_url": "https://github.com/locxter"
+    "login": "ov1d1u",
+    "id": 1385202,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1385202?v=4",
+    "html_url": "https://github.com/ov1d1u"
   },
   {
-    "login": "lrusso96",
-    "id": 26090639,
-    "avatar_url": "https://avatars.githubusercontent.com/u/26090639?v=4",
-    "html_url": "https://github.com/lrusso96"
+    "login": "roklc",
+    "id": 142526268,
+    "avatar_url": "https://avatars.githubusercontent.com/u/142526268?v=4",
+    "html_url": "https://github.com/roklc"
   },
   {
     "login": "SuhasDissa",
